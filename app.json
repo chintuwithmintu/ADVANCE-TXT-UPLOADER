@@ -1,40 +1,39 @@
-
 {
-    "name": "anonymous",
-    "description": "anonymous",
-    "repository": "https://github.com/",
+    "name": "𝐓𝐞𝐱𝐭 Uploader scammer",
+    "description": "Download videos from various websites using this telegram bot",
+    "logo": "https://graph.org/file/5af356000ab4f88312c0b.jpg",
     "keywords": [
-        "telegram bot",
+        "text-video",
+        "video-extract",
         "pyrogram"
     ],
+    "repository": "https://github.com/mohitbooraget/New_Txt_Random",
+    "success_url": "https://telegram.me/imendaxpublic",
+    "stack": "container",
     "env": {
-        "API_ID":{
-            "description": "Get your telegram API ID from https://my.telegram.org",
-            "value":"20114039"
+        "API_ID": {
+            "description": "Enter your API id You can generate by https://my.telegram.org/auth",
+            "required": true
         },
-        "API_HASH":{
-            "description":"Get your telegram API HASH from https://my.telegram.org",
-		    "value":"87297b8f3cc8fc9bbce591ad30da5896"
+        "API_HASH": {
+            "description": "Enter your API Hash You can generate by https://my.telegram.org/auth",
+            "required": true
         },
-        "BOT_TOKEN":{
-            "description":"Get from BotFather",
-            "value":"7559250442:AAF_HDC3Fb_yG6xHxXkRhhwlMm3LiwT9MkE"
-        },
-        "AUTH_USERS":{
-            "description":"Admin/Owner/Friends ID Seperate by ','  Ex: 44578878,8878899",
-             "value":"8172163893"
-       
-	}
+        "BOT_TOKEN": {
+            "description": "Enter your bot token You can generate by @BotFather",
+            "required": true
+        }
     },
     "addons": [],
     "buildpacks": [
         {
-	  "url": "heroku/python"
-          "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-	 "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview"
-	}
-
-	    
+            "url": "https://github.com/amivin/aria2-heroku.git"
+        },
+        {
+            "url": "heroku/python"
+        },       
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ]
     }
-
-}
