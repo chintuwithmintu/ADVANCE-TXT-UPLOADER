@@ -52,12 +52,12 @@ async def show_random_emojis(message):
     return emoji_message
     
 # Define the owner's user ID
-OWNER_ID = 7517045929 # Replace with the actual owner's user ID
+OWNER_ID = 7618270428 # Replace with the actual owner's user ID
 
 # List of sudo users (initially empty or pre-populated)
-SUDO_USERS = [7517045929]
+SUDO_USERS = [7618270428]
 
-AUTH_CHANNEL = -1002274225498
+AUTH_CHANNEL = -1002252455050
 
 # Function to check if a user is authorized
 def is_authorized(user_id: int) -> bool:
@@ -427,7 +427,7 @@ async def list_users(client: Client, msg: Message):
 async def help_command(client: Client, msg: Message):
     help_text = (
         "`/start` - Start the bot⚡\n\n"
-        "`/chiru` - Download and upload files (sudo)🎬\n\n"
+        "`/oreo` - Download and upload files (sudo)🎬\n\n"
         "`/restart` - Restart the bot🔮\n\n" 
         "`/stop` - Stop ongoing process🛑\n\n"
         "`/cookies` - Upload cookies file🍪\n\n"
@@ -441,7 +441,7 @@ async def help_command(client: Client, msg: Message):
     await msg.reply_text(help_text)
 
 # Upload command handler
-@bot.on_message(filters.command(["chiru"]))
+@bot.on_message(filters.command(["oreo"]))
 async def upload(bot: Client, m: Message):
     if not is_authorized(m.chat.id):
         await m.reply_text("**🚫You are not authorized to use this bot.\nPlease Contact to Owner to Get Premium**")
