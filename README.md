@@ -1,4 +1,4 @@
-https://dashboard.heroku.com/new?button-url=https://github.com/xpingpongx/Extractor-V3&template=https://github.com/nhi-batau/ADVANCE-TXT-UPLOADER
+https://dashboard.heroku.com/new?button-url=https://github.com/xpingpongx/Extractor-V3&template=https://github.com/chintuwithmintu/ADVANCE-TXT-UPLOADER
 <h1 align="center">
   🇮🇳 BHUMIHAR ᴛxᴛ ᴜᴘʟᴏᴀᴅᴇʀ 🇮🇳
 </h1>
